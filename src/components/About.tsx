@@ -1,9 +1,10 @@
-import { render } from "@testing-library/react";
-import React, { FC } from "react";
+import React from "react";
 import { FunctionComponent } from "react";
 
-export const About: FunctionComponent = () => {
+const About: FunctionComponent = () => {
     return (
-        <div>hello</div>
+        <div>hello about</div>
     )
 }
+
+export default About

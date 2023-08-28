@@ -1,9 +1,10 @@
-import { render } from "@testing-library/react";
-import React, { FC } from "react";
+import React from "react";
 import { FunctionComponent } from "react";
 
-export const Testimonials: FunctionComponent = () => {
+const Testimonials: FunctionComponent = () => {
     return (
-        <div>hello</div>
+        <div>hello Testimonials</div>
     )
 }
+
+export default Testimonials
