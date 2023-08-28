@@ -2,7 +2,20 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  return (
+  return ( // Layout inspired by https://www.freecodecamp.org/news/build-portfolio-website-react/
+    <main> 
+      <Navbar />
+      <About />
+      <Projects />
+      <Skills />
+      <Testimonials />
+      <Contact />
+    </main>
+  )
+
+
+
+  /*return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -19,7 +32,7 @@ function App() {
         </a>
       </header>
     </div>
-  );
+  );*/ // REACT BOILERPLATE ETC...
 }
 
 export default App;
