@@ -3,7 +3,10 @@ import { FunctionComponent } from "react";
 
 const Contact: FunctionComponent = () => {
     return (
-        <div>hello contact</div>
+        <body>
+        <div>LinkedIn: https://www.linkedin.com/in/keelan-hassell-meng/</div>
+        <div>GitHub: https://github.com/PersonalKez</div>
+        </body>
     )
 }
 

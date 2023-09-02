@@ -3,7 +3,10 @@ import { FunctionComponent } from "react";
 
 const Projects: FunctionComponent = () => {
     return (
-        <div>hello projects</div>
+        <main>
+        <h2>Krita OSS contribution</h2>
+        <h2>Weka price tracker</h2>
+        </main>
     )
 }
 

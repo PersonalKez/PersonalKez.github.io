@@ -1,12 +1,13 @@
 import './App.css';
-import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { Outlet, RouterProvider, createBrowserRouter, useNavigate } from 'react-router-dom';
 import About from './components/About';
 import Projects from './components/Projects';
-import Skills from './components/Skills';
+import ContactMe from './components/ContactMe';
 import Navbar from './components/Navbar';
-import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
-import React from 'react';
+import React, { useEffect } from 'react';
+import Theme from './utilities/theme';
+import { CssBaseline, ThemeProvider } from '@mui/material';
 
 export const router = createBrowserRouter([
   {
@@ -22,28 +23,40 @@ export const router = createBrowserRouter([
         element: <Projects />
       },
       {
-        path: "/skills",
-        element: <Skills />
+        path: "/contact",
+        element: <ContactMe />
       }
     ]
   }
 ]);
 
+const theme = Theme;
+
 function App() {
-  return <RouterProvider router={router} />
+  return (
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <RouterProvider router={router} />
+    </ThemeProvider>
+  )
 }
 
 function Root() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    navigate("/about")
+  }, [])
+
   return (
     <>
-    <header>
-      <Navbar />
-    </header>
-    <main> 
-      <Outlet />
-      <Testimonials />
-      <Contact />
-    </main>
+      <header>
+        <Navbar />
+      </header>
+      <main>
+        <Outlet />
+        <Contact />
+      </main>
     </>
   )
 }
