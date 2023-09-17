@@ -1,4 +1,4 @@
-import { Box, Grid, Paper, Typography, styled } from "@mui/material";
+import { Box, Divider, Grid, Paper, Stack, Typography, styled } from "@mui/material";
 import React from "react";
 import { FunctionComponent } from "react";
 
@@ -8,24 +8,29 @@ const About: FunctionComponent = () => {
         padding: theme.spacing(1),
         textAlign: 'center',
         color: theme.palette.text.secondary,
-      }));
+    }));
 
     return (
         <body>
-            <Grid container>
-                <Grid item xs={6} sx={{p: 15, display: "flex", alignItems:"end", justifyContent: "center"}}>
-                    <Item variant="h1" sx={{ alignItems: "flex-end"}}>FULL STACK <br/> DEVELOPER.</Item>
+            <Grid container sx={{ marginTop: 5 }}>
+                <Grid item xs={7} sx={{ p: 15, display: "flex", alignItems: "center", justifyContent: "right" }}>
+                    <Stack spacing={0}>
+                        <Item variant="h3" sx={{ p:0, alignItems: "flex-end", opacity: "80%", alignContent: "flex-end", textAlign: "right" }}>KEELAN HASSELL</Item>
+                        <Divider />
+                        <Item variant="h1" sx={{ p:0, alignItems: "flex-end", textAlign: "right" }}>FULL STACK <br /> DEVELOPER.</Item>
+                        <Item sx={{ alignItems: "flex-end", textAlign: "right" }}><b>Solving engineering problems with teamwork and vision.</b></Item>
+                    </Stack>
                 </Grid>
-                <Grid item >
+                <Grid item sx={{ justifyContent: "center" }} >
                     <Box
-                        sx={{p: 10}}
+                        sx={{ marginTop: 5, p: 10, height: 450, width: 450, justifyContent: "center" }}
                         component="img"
-                        alt="Programmer PNG Icon (placeholder)"
-                        src="https://www.shareicon.net/data/512x512/2016/01/13/702787_people_512x512.png"
+                        alt="Personal Photo"
+                        src="https://i.imgur.com/aqbJj4b.png"
                     />
                 </Grid>
             </Grid>
-            <h2>VALUES</h2>
+            {/* <h2>VALUES</h2>
             <p></p>
             <p>I entered the tech industry because I'm good at problem solving, teamwork, and bringing designs from a requirements to product. Learning is fun, and I like to do a lot of it; across a lot of different areas, but my learning interests are currently in building applications with React and Python, and how those integrate with cloud environments (AWS and GCP). I am used to working with a team and negotiating directly with users and product owners to collaborate on designing solutions for their needs. </p>
             <p></p>
@@ -41,7 +46,7 @@ const About: FunctionComponent = () => {
             <p></p>
             <h2>ACCOMPLISHMENTS</h2>
             <p></p>
-            <p>Beyond my profession, I have a growing interest in 2D and 3D art; this has a lot of transferable skills to engineering, improving my workflow and patience with difficult projects. From my experiences in freelancing, I have learned how to interact with clients in delivering product in a timely manner, and how to negotiate changing requirements.</p>
+            <p>Beyond my profession, I have a growing interest in 2D and 3D art; this has a lot of transferable skills to engineering, improving my workflow and patience with difficult projects. From my experiences in freelancing, I have learned how to interact with clients in delivering product in a timely manner, and how to negotiate changing requirements.</p> */}
         </body>
     )
 }

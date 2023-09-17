@@ -16,8 +16,8 @@ const Navbar: FunctionComponent = () => {
     }
 
     return (
-        <AppBar position="static">
-            <Box sx={{display: "flex", justifyContent: "right"}}>
+        <AppBar sx={{opacity: "80%"}}>
+            <Box sx={{display: "flex", justifyContent: "right", pr: 5}}>
                 <Tabs
                     value={value}
                     onChange={(handleChange)}
