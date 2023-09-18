@@ -1,9 +1,13 @@
-import { render } from "@testing-library/react";
-import React, { FC } from "react";
+import React from "react";
 import { FunctionComponent } from "react";
 
-export const Projects: FunctionComponent = () => {
+const Projects: FunctionComponent = () => {
     return (
-        <div>hello</div>
+        <main>
+        <h2>Krita OSS contribution</h2>
+        <h2>Weka price tracker</h2>
+        </main>
     )
 }
+
+export default Projects
