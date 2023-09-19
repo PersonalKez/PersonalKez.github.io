@@ -6,7 +6,7 @@ const Contact: FunctionComponent = () => {
     return (
         <body>
             <Stack direction={"row"} justifyContent={"center"}>
-                <Box padding={5}>
+                <Box paddingRight={5}>
                     <a href="https://www.linkedin.com/in/keelan-hassell-meng/">
                         <Box
                             component="img"
@@ -16,7 +16,7 @@ const Contact: FunctionComponent = () => {
                         />
                     </a>
                 </Box>
-                <Box padding={5}>
+                <Box >
                     <a href="https://github.com/PersonalKez/">
                         <Box
                             component="img"

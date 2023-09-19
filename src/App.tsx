@@ -7,7 +7,7 @@ import Navbar from './components/Navbar';
 import Contact from './components/Contact';
 import React, { useEffect } from 'react';
 import Theme from './utilities/theme';
-import { CssBaseline, ThemeProvider } from '@mui/material';
+import { CssBaseline, ThemeProvider, responsiveFontSizes } from '@mui/material';
 
 export const router = createBrowserRouter([
   {
@@ -30,7 +30,7 @@ export const router = createBrowserRouter([
   }
 ]);
 
-const theme = Theme;
+const theme = responsiveFontSizes(Theme);
 
 function App() {
   return (

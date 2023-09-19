@@ -12,21 +12,27 @@ const About: FunctionComponent = () => {
 
     return (
         <body>
-            <Grid container sx={{ marginTop: 5 }}>
-                <Grid item xs={7} sx={{ p: 15, display: "flex", alignItems: "center", justifyContent: "right" }}>
+            <Grid container sx={{ marginTop: 5, flexDirection: { xs: "column", lg: "row"} }}>
+                <Grid item xs={12} lg={7} sx={{ p: {lg: 15, sx: 0}, display: "flex", alignItems: { lg: "right", xs: "center" }, justifyContent: { lg: "right", xs: "center" } }}>
                     <Stack spacing={0}>
-                        <Item variant="h3" sx={{ p:0, alignItems: "flex-end", opacity: "80%", alignContent: "flex-end", textAlign: "right" }}>KEELAN HASSELL</Item>
+                        <Item variant="h3" sx={{ p: 0, alignItems: "flex-end", opacity: "80%", alignContent: "flex-end", textAlign: { lg: "right", xs: "center" } }}>KEELAN HASSELL</Item>
                         <Divider />
-                        <Item variant="h1" sx={{ p:0, alignItems: "flex-end", textAlign: "right" }}>FULL STACK <br /> DEVELOPER.</Item>
-                        <Item sx={{ alignItems: "flex-end", textAlign: "right" }}><b>Solving engineering problems with teamwork and vision.</b></Item>
+                        <Item variant="h1" sx={{ p: 0, alignItems: "flex-end", textAlign: { lg: "right", xs: "center" } }}>FULL STACK <br /> DEVELOPER.</Item>
+                        <Item sx={{ alignItems: "flex-end", textAlign: { lg: "right", xs: "center" } }}><b>Solving engineering problems with teamwork and vision.</b></Item>
                     </Stack>
                 </Grid>
-                <Grid item sx={{ justifyContent: "center" }} >
+                <Grid item sx={{
+                    justifyContent: "center",
+                    alignItems: "center",
+                    justify: "center",
+                    display: {xs: "flex", lg: "inline"}
+                }} xs={12} lg={5}>
                     <Box
-                        sx={{ marginTop: 5, p: 10, height: 450, width: 450, justifyContent: "center" }}
+                        sx={{ marginTop: { lg: 5, xs: 0 }, p: 10, height: 450, width: 450, justifyContent: "center" }}
                         component="img"
                         alt="Personal Photo"
                         src="https://i.imgur.com/aqbJj4b.png"
+
                     />
                 </Grid>
             </Grid>

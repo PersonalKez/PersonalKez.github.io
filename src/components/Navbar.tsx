@@ -3,8 +3,14 @@ import React, { useEffect, useState } from "react";
 import { FunctionComponent } from "react";
 import { redirect, useNavigate } from "react-router-dom";
 
-const pages = ["About", "Projects", "Contact Me"]
-const paths = ["/about", "/projects", "/contact"]
+// const pages = ["About", "Projects", "Contact Me"]
+// const paths = ["/about", "/projects", "/contact"]
+
+// add projects back in when I can actually talk about it... 
+
+const pages = ["About", "Contact Me"]
+const paths = ["/about", "/contact"]
+
 
 const Navbar: FunctionComponent = () => {
 
@@ -16,7 +22,7 @@ const Navbar: FunctionComponent = () => {
     }
 
     return (
-        <AppBar sx={{opacity: "80%"}}>
+        <AppBar sx={{opacity: "80%"}} position="sticky">
             <Box sx={{display: "flex", justifyContent: "right", pr: 5}}>
                 <Tabs
                     value={value}
