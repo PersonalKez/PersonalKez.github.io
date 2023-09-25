@@ -57,6 +57,7 @@ function Root() {
         <Outlet />
         <Contact />
       </main>
+
     </>
   )
 }
