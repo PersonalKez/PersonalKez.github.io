@@ -1,7 +1,7 @@
 {
   "name": "kez-webpage",
   "version": "0.1.0",
-  "homepage": "https://PersonalKez.github.io/react",
+  "homepage": "https://PersonalKez.github.io/about",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
