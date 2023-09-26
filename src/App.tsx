@@ -1,5 +1,5 @@
 import './App.css';
-import { Outlet, RouterProvider, createBrowserRouter, useNavigate } from 'react-router-dom';
+import { Outlet, RouterProvider, createHashRouter, useNavigate } from 'react-router-dom';
 import About from './components/About';
 import Projects from './components/Projects';
 import ContactMe from './components/ContactMe';
@@ -9,7 +9,7 @@ import React, { useEffect } from 'react';
 import Theme from './utilities/theme';
 import { CssBaseline, ThemeProvider, responsiveFontSizes } from '@mui/material';
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     path: "/",
     element: <Root />,
