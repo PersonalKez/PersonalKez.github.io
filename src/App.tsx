@@ -45,7 +45,7 @@ function Root() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    navigate("/#/about")
+    navigate("/about")
   }, [])
 
   return (
