@@ -1,16 +1,10 @@
-import { AppBar, Container, Toolbar, Tab, Tabs, Box } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import { AppBar, Tab, Tabs, Box } from "@mui/material";
+import React, { useState } from "react";
 import { FunctionComponent } from "react";
-import { redirect, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-// const pages = ["About", "Projects", "Contact Me"]
-// const paths = ["/about", "/projects", "/contact"]
-
-// add projects back in when I can actually talk about it... 
-
-const pages = ["About", "Contact Me"]
-const paths = ["/about", "/contact"]
-
+const pages = ["About", "Projects", "Contact Me"]
+const paths = ["/about", "/projects", "/contact"]
 
 const Navbar: FunctionComponent = () => {
 

@@ -1,12 +1,19 @@
+import { Box } from "@mui/material";
 import React from "react";
 import { FunctionComponent } from "react";
 
 const Projects: FunctionComponent = () => {
     return (
-        <main>
-        <h2>Krita OSS contribution</h2>
-        <h2>Weka price tracker</h2>
-        </main>
+        <Box display="flex"
+            justifyContent="center"
+            alignItems="center">
+            <main>
+                <h2>Interesting Recent Completed Projects</h2>
+                <ul>
+                    <li> <a href="https://github.com/PersonalKez/citiesApp-docker">Database travel journal with server-side caching</a> </li>
+                </ul>
+            </main>
+        </Box>
     )
 }
 
